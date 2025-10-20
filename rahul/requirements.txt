@@ -1,9 +1,9 @@
-pandas
-python-dotenv
-ultralytics
-opencv-python
-moviepy
-pytubefix
-tqdm
-requests
-beautifulsoup4
+pandas               # Used for handling CSV files and data mapping
+python-dotenv        # Loads environment variables like FTP credentials securely
+ultralytics          # Provides YOLOv11 models for object detection and tracking
+opencv-python        # Handles video processing and frame reading
+moviepy              # Used for trimming and editing video clips
+pytubefix            # Downloads YouTube videos in preferred resolutions
+tqdm                 # Displays progress bars for downloads and detections
+requests             # Makes HTTP/FTP requests to download files
+beautifulsoup4       # Parses HTML pages to extract video file links
