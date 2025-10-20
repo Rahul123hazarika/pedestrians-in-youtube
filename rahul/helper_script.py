@@ -99,7 +99,7 @@ class Youtube_Helper:
                                             bar.update(len(chunk))
                             fps = self.get_video_fps(local_path)
                             res = self.get_video_resolution_label(local_path)
-                            logger.info(f"✅ Downloaded {filename_mp4} ({res}, {fps} FPS)")
+                            logger.info(f" Downloaded {filename_mp4} ({res}, {fps} FPS)")
                             return local_path, filename, res, fps
             logger.warning(f"{filename_mp4} not found on FTP server.")
             return None
@@ -124,7 +124,7 @@ class Youtube_Helper:
                     logger.info(f"Downloading {vid} in {res}...")
                     stream.download(output_path, filename=f"{vid}.mp4")
                     fps = self.get_video_fps(output_file)
-                    logger.info(f"✅ Download complete: {output_file}")
+                    logger.info(f" Download complete: {output_file}")
                     return output_file, vid, res, fps
             logger.error(f"No matching resolution found for {vid}")
             return None
@@ -219,4 +219,4 @@ class Youtube_Helper:
         out.release()
         progress.close()
         cv2.destroyAllWindows()
-        logger.info(f"✅ YOLO detection finished. Output saved to {out_path}")
+        logger.info(f" YOLO detection finished. Output saved to {out_path}")
