@@ -1,0 +1,9 @@
+pandas
+python-dotenv
+ultralytics
+opencv-python
+moviepy
+pytubefix
+tqdm
+requests
+beautifulsoup4
